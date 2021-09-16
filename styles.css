@@ -84,5 +84,6 @@ body {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     /* 이미지 모퉁이 곡률 */
+    /* 바텀 좌우는 왜 안 먹지? 컴퓨터에서는 되는데. */
     background-size: cover;
 }
