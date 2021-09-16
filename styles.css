@@ -79,8 +79,10 @@ body {
 .card-image {
     grid-area: image;
     background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%), url("img5.jpg");
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     /* 이미지 모퉁이 곡률 */
     background-size: cover;
 }
