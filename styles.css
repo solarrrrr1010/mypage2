@@ -19,7 +19,7 @@ body {
 /* 카드의 전체적인 설정 부분 */
 .card {
     display: grid;
-    grid-template-columns: 400px; /* 컬럼은 열. 세로로 1개짜리 */
+    grid-template-columns: 350px; /* 컬럼은 열. 세로로 1개짜리 */
     /* 
     grid-template-rows: 210px 250px 20px; // 로우는 행. 가로로 3개다.
     사진 / 텍스트 / 상태창 
@@ -38,6 +38,8 @@ body {
     transform-style: preserve-3d; /* 평면을 3d 입체적으로 설정 */
     transform: perspective(1000px);
      /* 원근법 적용. 이걸 적용해야 tranlateZ가 먹힌다고 함. */
+
+     
 }
 .rgb::after {
     content: "";
@@ -65,7 +67,7 @@ body {
     border-radius: 3px;
     filter: blur(18px);
     transform: translateZ(-1px);
-    animation: rgb 10s linear infinite; 
+    animation: rgb 6s linear infinite; 
     /* 빛 흐르는 효과가 느려짐. 잘게 쪼개져서 그런가? */
 }
 @keyframes rgb {
@@ -84,6 +86,93 @@ body {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     /* 이미지 모퉁이 곡률 */
-    /* 바텀 좌우는 왜 안 먹지? 컴퓨터에서는 되는데. */
     background-size: cover;
 }
+
+.btn {
+    position: absolute;
+    top: 500px;
+    left: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    
+  }
+
+  .btn1 {
+    position: absolute;
+    top: 500px;
+    left: 93px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    
+  }
+
+  .btn2 {
+    position: absolute;
+    top: 500px;
+    left: 175px;
+    background: transparent;
+    
+    border: 0;
+    outline: 0;
+    
+  }
+
+  .btn3 {
+    position: absolute;
+    top: 500px;
+    left: 255px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    
+  }
+
+  .btn4 {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    
+  }
+
+  .btn5 {
+    position: absolute;
+    top: 50px;
+    left: 93px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    
+  }
+
+  .btn6 {
+    position: absolute;
+    top: 50px;
+    left: 175px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    
+  }
+
+
+.btn:active, .btn1:active, .btn2:active, .btn3:active, .btn4:active, .btn5:active, .btn6:active{
+    /* background-color: rgba(146, 146, 146, 0.664) */
+    /* background-color: #1d1d1d; */
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(3px);
+    
+   
+}
+
+
+img {
+    width: 70px;
+    height: 70px;
+}
+
