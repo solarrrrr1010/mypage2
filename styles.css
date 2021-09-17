@@ -171,8 +171,44 @@ body {
 }
 
 
-img {
+.img {
     width: 70px;
     height: 70px;
 }
 
+.img1 {
+    position: absolute;
+    top: 13px;
+    left: 290px;
+    width: 15px;
+    height: 15px;
+
+}
+
+.img2 {
+    position: absolute;
+    top: 13px;
+    left: 310px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.img3 {
+    position: absolute;
+    top: 13px;
+    left: 265px;
+    width: 20px;
+    height: 20px;
+
+}
+
+
+.img4 {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 35px;
+  height: 30px;
+
+}
