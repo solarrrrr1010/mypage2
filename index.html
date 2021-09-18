@@ -7,34 +7,59 @@
     <body>
         
         <div class="card rgb">
+            <div class="time-text" id="time">
+                <span class="time">wecode 10:00</span>
+            </div>
+            <div class="profile-text" id="profile">
+                <span class="profile">소개</span>
+            </div>
+            <div class="goal-text" id="goal">
+                <span class="goal">목표</span>
+            </div>
+            <div class="memories-text" id="memories">
+                <span class="memories">추억</span>
+            </div>
             <div class="card-image"></div>
-          
-            <!-- <div class="btn"></div> -->
+
             <img class="img img1" src="wifi.png" />
             <img class="img img2" src="battery2.png" />
             <img class="img img3" src="signal.png" />
-            <img class="img img4" src="time.png" />
+            
+            <div id="allBtn">
 
+            <button class="btn" type="button"><img class="img img" src="phone.png" /></button>
+            <button class="btn1" type="button"><img class="img img" src="mail.png" /></button>
+            <button class="btn2" type="button"><img class="img img" src="safari.png" /></button>
+            <button class="btn3" type="button"><img class="img img" src="kakao.png" /></button>
 
-
-            <button class="btn" type="button"><img class="img img" src="Phone2.png" /></button>
-            <button class="btn1" type="button"><img class="img img" src="Mail.png" /></button>
-            <button class="btn2" type="button"><img class="img img" src="Safari.png" /></button>
-            <button class="btn3" type="button"><img class="img img" src="music.png" /></button>
-
-            <button class="btn4" type="button"><img class="img img" src="Message.png" /></button>
-            <button class="btn5" type="button"><img class="img img" src="Settings.png" /></button>
-            <button class="btn6" type="button"><img class="img img" src="Photos.png" /></button>
+            <button class="btn4" type="button" onclick="toggleImg()"><img class="img img" src="message.png" /></button>
+            <button class="btn5" type="button"><img class="img img" src="settings.png" /></button>
+            <button class="btn6" type="button"><img class="img img" src="photos.png" /></button>
+            </div>
+            <div class="first" id="bgimg"></div>
+                
+            
         </div>
         
         
-        <script srt="vanilla-tilt.min.js"></script>
+        <script src="vanilla-tilt.min.js"></script>
         <script>
             VanillaTilt.init(document.querySelectorAll(".card"),{
                 glare: true,
                 reverse: true,
                 "max-glare": 0.15
             });
+           function toggleImg() {
+            // var target = document.getElementsByClassName("card-image");
+            // target.style.background.url('profile.png');
+            var target = document.getElementById("bgimg");
+            var target1 = document.getElementById("allBtn");
+            target.style.display = 'inline';
+            target1.style.display = 'none';
+            
+            }
+
+
         </script>
     </body>    
 </html>

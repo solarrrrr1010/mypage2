@@ -89,6 +89,18 @@ body {
     background-size: cover;
 }
 
+.first {
+  display: none;
+  grid-area: image;
+  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%), url("profile.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* 이미지 모퉁이 곡률 */
+  background-size: cover;
+}
+
 .btn {
     position: absolute;
     top: 500px;
@@ -178,10 +190,10 @@ body {
 
 .img1 {
     position: absolute;
-    top: 13px;
+    top: 16px;
     left: 290px;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
 
 }
 
@@ -208,7 +220,44 @@ body {
   position: absolute;
   top: 8px;
   left: 15px;
-  width: 35px;
+  width: 30px;
   height: 30px;
 
 }
+
+.time-text .time{
+  color: white;
+  font-size: 13px;
+  
+  position: absolute;
+  top: 13px;
+  left: 15px;
+}
+
+.profile-text .profile{
+  color: white;
+  font-size: 13px;
+  
+  position: absolute;
+  top: 130px;
+  left: 40px;
+}
+
+.goal-text .goal{
+  color: white;
+  font-size: 13px;
+  
+  position: absolute;
+  top: 130px;
+  left: 125px;
+}
+
+.memories-text .memories{
+  color: white;
+  font-size: 13px;
+  
+  position: absolute;
+  top: 130px;
+  left: 205px;
+}
+
