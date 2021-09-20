@@ -101,6 +101,31 @@ body {
   background-size: cover;
 }
 
+.second {
+  display: none;
+  grid-area: image;
+  background: linear-gradient(rgb(45, 39, 129) 0%, #fff0 70%, #1d1d1d 100%);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* 이미지 모퉁이 곡률 */
+  background-size: cover;
+}
+
+.third {
+  display: none;
+  grid-area: image;
+  background: linear-gradient(rgba(151, 0, 71, 0.76) 0%, rgba(110, 0, 52, 0.726) 30%, rgba(22, 22, 22, 0.753) 100%);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* 이미지 모퉁이 곡률 */
+  background-size: cover;
+  height: 600px;
+}
+
 .btn {
     position: absolute;
     top: 500px;
@@ -172,8 +197,18 @@ body {
     
   }
 
+  .btn7 {
+    position: absolute;
+    top: 530px;
+    left: 145px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    
+  }
 
-.btn:active, .btn1:active, .btn2:active, .btn3:active, .btn4:active, .btn5:active, .btn6:active{
+.btn:active, .btn1:active, .btn2:active, .btn3:active, 
+.btn4:active, .btn5:active, .btn6:active, .btn7:active{
     /* background-color: rgba(146, 146, 146, 0.664) */
     /* background-color: #1d1d1d; */
     /* box-shadow: 0 5px #666; */
@@ -220,12 +255,12 @@ body {
   position: absolute;
   top: 8px;
   left: 15px;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
 
 }
 
-.time-text .time{
+.time {
   color: white;
   font-size: 13px;
   
@@ -234,7 +269,7 @@ body {
   left: 15px;
 }
 
-.profile-text .profile{
+.profile{
   color: white;
   font-size: 13px;
   
@@ -252,7 +287,7 @@ body {
   left: 125px;
 }
 
-.memories-text .memories{
+.memories{
   color: white;
   font-size: 13px;
   
@@ -261,3 +296,49 @@ body {
   left: 205px;
 }
 
+.goal-intext{
+  position: absolute;
+  color: white;
+  font-size: 13px;
+  top: 40px;
+  left: 20px;
+}
+
+.second p {
+  color: rgb(186, 221, 250);
+  font-size:14px;
+  font-weight: 300;
+}
+.second h2 {
+  margin-top:30px;
+  font-size:28px;
+}
+
+.container {
+  
+  display: flex;
+  flex-flow: column nowrap;
+  /* align-items: stretch; */
+  /* align-items: flex-start; */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  white-space: wrap;
+  height: 550px;
+  margin-top: 10px;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  /* flex-basis: 100%; */
+  /* position: absolute; */
+  width: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 2%;
+  flex: 0 0 auto;
+  
+}

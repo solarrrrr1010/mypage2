@@ -10,37 +10,77 @@
             <div class="time-text" id="time">
                 <span class="time">wecode 10:00</span>
             </div>
+            <div class="bgtext" id="bgtext">
             <div class="profile-text" id="profile">
                 <span class="profile">소개</span>
             </div>
+          
             <div class="goal-text" id="goal">
                 <span class="goal">목표</span>
             </div>
             <div class="memories-text" id="memories">
                 <span class="memories">추억</span>
             </div>
-            <div class="card-image"></div>
+            </div>
+
+       
+             
+
+
+            <div class="card-image" id="card-image"></div>
 
             <img class="img img1" src="wifi.png" />
             <img class="img img2" src="battery2.png" />
             <img class="img img3" src="signal.png" />
             
             <div id="allBtn">
-
             <button class="btn" type="button"><img class="img img" src="phone.png" /></button>
             <button class="btn1" type="button"><img class="img img" src="mail.png" /></button>
             <button class="btn2" type="button"><img class="img img" src="safari.png" /></button>
             <button class="btn3" type="button"><img class="img img" src="kakao.png" /></button>
 
             <button class="btn4" type="button" onclick="toggleImg()"><img class="img img" src="message.png" /></button>
-            <button class="btn5" type="button"><img class="img img" src="settings.png" /></button>
-            <button class="btn6" type="button"><img class="img img" src="photos.png" /></button>
+            <button class="btn5" type="button" onclick="toggleImg1()"><img class="img img" src="settings.png" /></button>
+            <button class="btn6" type="button" onclick="toggleImg2()"><img class="img img" src="photos.png" /></button>
             </div>
-            <div class="first" id="bgimg"></div>
-                
+
+            <div class="first" id="bgimg">
+                <div class="home" id="home"></div>
+                <button class="btn7" type="button" onclick="toggleHome()" id='btn7'><img class="img img4" src="homeButton.png" /></button>
+            </div>
+            <div class="second" id="goalpage">
+                <div class="goal-intext" id="goal-intext">
+                    <span><h2>이런 개발자가 되고 싶다.</h2></span>
+                    <p>끊임 없이 노력하고 끊임 없이 발전하는 개발자.</p>
+                    <p>회사와 사회, 주변 모두에 좋은 영향을 주는 개발자.</p>
+                    <p>누구보다 내 자신에게 인정받을 수 있는 개발자.</p>
+                    <p>난 그런 개발자가 되고 싶다.</p>
+                </div>
+                <div class="home" id="home"></div>
+                <button class="btn7" type="button" onclick="toggleHome()" id='btn7'><img class="img img4" src="homeButton.png" /></button>
+            </div>
+            <div class="third" id="memoriespage">
+                <div class="container">
+                    <img class="item" src="image1.jpg">
+                    <img class="item" src="image2.jpg">
+                    <img class="item" src="image3.jpg">
+                    <img class="item" src="image4.jpg">
+                    <img class="item" src="image5.jpg">
+                    <img class="item" src="image6.jpg">
+                    <img class="item" src="image7.jpg">
+                    <img class="item" src="image8.jpg">
+                    <img class="item" src="image9.jpg">
+                </div>
+
+
+                <div class="home" id="home"></div>
+                <button class="btn7" type="button" onclick="toggleHome()" id='btn7'><img class="img img4" src="homeButton.png" /></button>
+            </div>
             
         </div>
         
+      
+
         
         <script src="vanilla-tilt.min.js"></script>
         <script>
@@ -52,13 +92,50 @@
            function toggleImg() {
             // var target = document.getElementsByClassName("card-image");
             // target.style.background.url('profile.png');
-            var target = document.getElementById("bgimg");
+            var targetBgImg = document.getElementById("bgimg");
             var target1 = document.getElementById("allBtn");
-            target.style.display = 'inline';
+            var target2 = document.getElementById("card-image");
+            var target3 = document.getElementById("bgtext");
+
+            targetBgImg.style.display = 'inline';
             target1.style.display = 'none';
+            target2.style.display = 'none';
+            target3.style.display = 'none';
             
             }
 
+            function toggleImg1() {
+            // var target = document.getElementsByClassName("card-image");
+            // target.style.background.url('profile.png');
+            var targetGoalPage = document.getElementById("goalpage");
+            var target1 = document.getElementById("allBtn");
+            var target2 = document.getElementById("card-image");
+            var target3 = document.getElementById("bgtext");
+
+            targetGoalPage.style.display = 'inline';
+            target1.style.display = 'none';
+            target2.style.display = 'none';
+            target3.style.display = 'none';
+            }
+
+            function toggleImg2() {
+            // var target = document.getElementsByClassName("card-image");
+            // target.style.background.url('profile.png');
+            var targetMemoriesPage = document.getElementById("memoriespage");
+            var target1 = document.getElementById("allBtn");
+            var target2 = document.getElementById("card-image");
+            var target3 = document.getElementById("bgtext");
+
+            targetMemoriesPage.style.display = 'inline';
+            target1.style.display = 'none';
+            target2.style.display = 'none';
+            target3.style.display = 'none';
+            }
+
+            function toggleHome() {
+                // window.location = "https://solarrrrr1010.github.io/mypage2";
+                window.location = "file:///Users/bongcheolkim/My%20page/index.html";
+            }
 
         </script>
     </body>    
